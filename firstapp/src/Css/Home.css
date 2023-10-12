@@ -1,0 +1,266 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.header
+{
+    background:#003b95;
+    
+}
+
+.header-part1
+{
+   
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    padding: 10px 0;
+
+}
+.booking
+{
+    font-weight: 900;
+    font-size: 28px;
+    color: white;
+}
+.state
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr 1.5fr 1.5fr ;
+    font-weight: 700;
+}
+.state *
+{
+    color: white;
+    text-align: center;
+}
+
+.logo img
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.round
+{
+    margin:  5px;
+    font-size: 30px
+
+
+}
+.property
+{
+padding: 10px 0;
+}
+.inr
+{
+    padding-top: 10px;
+}
+.btn1
+{
+    margin: 0 5px;
+
+}
+.btn
+{
+    background: white;
+    color: rgb(12, 181, 242);
+    padding: 10px 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    border: 2px solid rgb(12, 181, 242);
+}
+
+.header-logo 
+{
+    display: none;
+    border-radius: 50%; 
+    font-size: 30px
+}
+.header-logo1
+{
+    margin: 0 5px 0 5px;
+} 
+
+.header-part2
+{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,1.7fr) 5fr;
+    /* background: rgb(43, 43, 177); */
+
+}
+.header-part2 *
+{
+    margin: 10px 5px;
+    color: white;
+    padding: 2px 0;
+ 
+}
+.logo-travelling
+{
+    transition: 0.5s;
+    border-radius: 50px;
+    background:rgb(236, 229, 229 ,0);
+
+}
+.logo-travelling3
+{
+    display: none;
+}
+.logo-travelling1
+{
+    background:rgba(28, 177, 232, 0.3);
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+
+.logo-travelling:hover
+{
+    background:rgba(28, 177, 232, 0.3) ;
+}
+.blank
+{
+    display: none;
+}
+.logo-travelling-main
+{
+    position: relative;
+}
+.contant{
+    height: 400px;
+     background:url(https://r-xx.bstatic.com/xdata/images/xphoto/2880x868/279346280.jpeg?k=1f5ef835475595e138026356cdf0664eafb17cc2fc5aa9d09d90407d7ca866a1&o) ;
+     background-size: 100% 100%;
+     position: relative;
+}
+.contant .text{
+    color: white;
+    width: 40%;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}   
+.text h1{font-size: 40px;}
+.text p{font-size: 25px;}
+.contant .text button{
+    border: none;
+    background:hsl(216, 100%, 29%);
+    border-radius: 5%;
+    margin: 25px 0px;
+    padding-inline: 5px;
+}
+
+
+.inputs
+{
+    width: 80%;
+    position: absolute;
+    top: 95%;
+    left: 10%;
+    display: grid;
+    grid-template-columns: repeat(3,3fr) 1fr;
+}
+button
+{
+ border: 3px solid goldenrod;
+ font-size: 20px;
+ color: white;
+ height: 50px;
+}
+input
+{
+    width: 100%;
+    height: 50px;
+   border: 3px solid goldenrod;
+   color: black;
+   padding-left: 10px;
+}
+.inp{  border: 3px solid goldenrod;padding-top: 8px;}
+.inp a{ text-decoration: none; color: black; }
+input:focus
+{
+ outline: none;
+}
+
+
+
+
+
+
+@media (max-width:1200px)
+{
+
+.header-logo 
+{
+    display: block;
+}
+.inr,.logo,.property,.round,.btn
+{
+    display: none;
+}
+.header-part1
+{
+    grid-template-columns: 9fr 0.5fr;
+}
+.header-logo1
+{
+    margin-left: 15px;
+} 
+.header-part2
+{
+    grid-template-columns: repeat(6,1fr) ;
+}
+.contant{
+     background-size: cover;
+}
+.contant .text{
+    width: 100%;
+    top: 25%;
+    left: 0%;
+}  
+.text h1{font-size: 30px;}
+.text p{font-size: 18px;}
+}
+
+
+
+@media (max-width:900px)
+{
+
+.logo-travelling2
+{
+    display: none;
+}
+.header-part2
+{
+    grid-template-columns: repeat(4,1fr) ;
+}
+.logo-travelling3
+{
+    display: block;
+    position: relative;
+}
+.buttons
+{
+    width: 110%;
+    position: absolute;
+    top: 100%;
+    left: -10%;
+    background: black;
+    border-radius: 20px;
+}
+
+.inputs
+{
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+}
+
+}

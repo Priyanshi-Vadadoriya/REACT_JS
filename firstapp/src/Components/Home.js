@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Css/Home.css';
+import data from './data.json'
 
 
 function Home() {
@@ -66,18 +67,48 @@ function Home() {
         </div>
 
     </div> 
-    </div>
+</div>
 
-
-
-
-
-
+{
+    data.map((vl,i)=>(
+        <div className='card1'>
+   
+        <div className='image'>
+            <a href='#'><img src={vl.img_url} height={300}/></a>
+            <span><a href='#'><i class="fa-regular fa-heart"></i></a></span>
+        </div>
+        <div className='info'>
+            <div className='text'>
+                <h2>
+                    {
+                        vl.title
+                    }
+                </h2>
+                <a href='#'>Anjuna Beach,</a>
+                <a href='#'>Anjuna</a>
+                <span><a href='#'>Show on map</a></span>
+               
+                <p>
+                    {
+                        vl.description
+                    }
+                </p>
+            </div>
+            <div className='btns'>
+                <div className='book'>New to Booking.com</div>
+                <button>Show Prices</button>
+            </div>
+        </div>
+    
+</div> 
+    ))
+}
 
 
     </>
   );
 }
+
 
 export default Home;
 

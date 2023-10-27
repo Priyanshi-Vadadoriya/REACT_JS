@@ -1,6 +1,9 @@
 import './App.css';
 import GetAPIdata from './GetAPIdata';
 import Classcompo from './Classcompo';
+import PropsEx1 from './PropsEx1';
+import State from './State'
+import Ex1 from './UseState'
 
 
 function App() {
@@ -11,6 +14,9 @@ function App() {
     <p>this is para</p>
     <GetAPIdata/>
     <Classcompo/>
+    <PropsEx1 />
+    <State/>
+    <Ex1/>
 
    </>
   );

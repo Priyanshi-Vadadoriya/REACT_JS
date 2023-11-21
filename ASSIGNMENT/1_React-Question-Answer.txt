@@ -1,0 +1,137 @@
+											ReactJs
+										MODULE: 9 ReactJs Intro
+
+1).What is React Js?
+Ans:-
+•	React is a JavaScript library created by Facebook
+•	React is a User Interface (UI) library
+•	React is a tool for building UI components
+
+
+
+2).What is NPM in React Js?
+
+•	npm is the world's largest Software Library (Registry)
+•	npm is also a software Package Manager and Installer
+•	The name npm (Node Package Manager) stems from when npm first was created as a package manager for Node.js.
+•	All npm packages are defined in files called package.json.
+
+
+
+3).What is Role of Node Js in react Js?
+
+•	Node is the most popular platform for hosting and running web servers for React apps.
+
+
+
+4.What is CLI command In React Js?
+
+•	CLI commands are currently only used to create a passable version of a react application using the command line.
+
+
+
+5.What is Components in React Js?
+
+•	Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+•	Components come in two types, Class components and Function components, in this tutorial we will concentrate on Function components.
+
+
+
+6.What is Header and Content Components in React Js?
+
+•	Headers are compositions that extend standard navbar functionalities. They contain additional components like a jumbotron, sub-navbar, or image covers which serve as a containers for extra navigation elements - usually links, forms, or call-to-action buttons.
+
+
+
+7.How to install React Js on Windows, Linux Operating System? How to Install NPM and How to check version of NPM?
+
+•	Step 1: Install Node.js installer for windows. 
+•	Step 2: Open command prompt  to check whether it is completely installed or not type the command –> 
+•	Step 3: Now in the terminal run the below command:  npm install -g create-react-app  
+•	Step 4:Now Create a new folder where you want to make your react app using the below command: mkdir newfolder
+•	Step 5: Now inside this folder run the command –> create-react-app reactfirst YOUR_APP_NAME
+•	Step 6: Now open the IDE of your choice for eg.  Visual studio code and open the folder where you have installed the react app newfolder (in the above example)  inside the folder             		you will see your app’s name reactapp (In our example). Use the terminal and move inside your app name folder.Use command  cd reactapp (your app name)
+•	Step 7: To start your app run the below command : npm start  
+
+
+
+8.How to check version of React Js?
+
+•	To check which React version is your project using you need to open the package. json. Take a look under the dependencies section.
+
+
+9. How to change in components of React Js?
+
+•	setState() enqueues changes to the component state and tells React that this component and its children need to be re-rendered with the updated state. This is the primary method you use to update the user interface in response to event handlers and server responses.
+
+
+
+10.How to Create a List View in React Js?
+
+app.js code
+import React from 'react';
+import ListView from './ListView';
+function App() {
+  const items = ['Item 1', 'Item 2', 'Item 3'];
+  return (
+    <div className="App">
+      <h1>List View Example</h1>
+      <ListView items={items} />
+    </div>
+  );
+}
+export default App;
+list.js code
+import React from 'react';
+function ListView({ items }) {
+  return (
+    <ul>
+      {items.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
+  );
+}
+export default ListView;
+
+
+
+11.Create Increment decrement state change by button click?
+
+				app.js code
+import React from 'react';
+import Counter from './Counter';
+function App() {
+  return (
+    <div className="App">
+      <h1>Increment and Decrement Example</h1>
+      <Counter />
+    </div>
+  );
+}
+export default App;
+counter.js code
+import React, { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  const decrement = () => {
+    setCount(count - 1);
+  };
+
+  return (
+    <div>
+      <h1>Counter</h1>
+      <p>Count: {count}</p>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+    </div>
+  );
+}
+
+export default Counter;

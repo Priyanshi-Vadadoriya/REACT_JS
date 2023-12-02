@@ -16,23 +16,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
    <>
-{/* 
+
     <h1>Hello REact </h1>
     <p>this is para</p>
-    <GetAPIdata/>
+    {/* <GetAPIdata/>
     <Classcompo/>
     <PropsEx1 />
     <State/>
-    <Ex1/>
+    <Ex1/> */}
     <ColorChange/>
-    <Usestate/>
+    {/* <Usestate/>
     <Form/>
     <UseRefHook/>
     <Ref/>
-    <UserTable/> */}
-    <Table/>
-
-
+    <UserTable/>
+    <Table/> */}
 
    </>
   );

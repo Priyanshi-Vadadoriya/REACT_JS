@@ -17,6 +17,31 @@ function Emplisting() {
     navigate('/employee/view/'+id)
    }
 
+   const loadEdit = (id)=>{
+    navigate('/employee/edit/'+id)
+   }
+   
+   const loadDelete = (id)=>{
+    
+    if(window.confirm("are you sure.....!"))
+    {
+      fetch("http://localhost:8000/employee/"+id,{
+          method:"DELETE",
+          headers:{"content-type":"application/json"},
+          body:JSON.stringify(empdata)
+      })
+      .then((res)=>{
+          if(res)
+          {
+              alert("delete successfully...")
+              navigate('/')
+          }
+      })
+      window.location.reload()
+    }
+   }
+
+   
   return (
     <div>
         <h1 className='mt-3'>Emplooyee list</h1>
@@ -41,8 +66,8 @@ function Emplisting() {
                 <td>{item.email}</td>
                 <td>{item.phone}</td>
                 <td>
-                    <button className='btn btn-danger me-3'>Edit</button>
-                    <button className='btn btn-success me-3'>Delete</button>
+                    <button className='btn btn-danger me-3' onClick={()=>{loadEdit(item.id)}}>Edit</button>
+                    <button className='btn btn-success me-3' onClick={()=>{loadDelete(item.id)}}>Delete</button>
                     <button className='btn btn-warning me-3' onClick={()=>{loadview(item.id)}}>View</button>
                 </td>
             </tr>

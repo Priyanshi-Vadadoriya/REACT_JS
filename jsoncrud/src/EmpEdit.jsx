@@ -1,34 +1,47 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
+import { useNavigate, useParams } from 'react-router-dom';
 
-function Empcreate() {
+function EmpEdit() {
+  const [id,changeid] = useState("");
+  const [name,changename] = useState("");
+  const [email,changeemail] = useState("");
+  const [phone,changephone] = useState("");
+  const [active,changeactive] = useState(false);
 
-    const [id,changeid] = useState("");
-    const [name,changename] = useState("");
-    const [email,changeemail] = useState("");
-    const [phone,changephone] = useState("");
-    const [active,changeactive] = useState(false);
+  const navigate = useNavigate();
+  const {empId} = useParams();
+  useEffect(()=>{
+    fetch(("http://localhost:8000/employee/"+empId))
+    .then((res)=>{return res.json()})
+    .then((data)=>{
+      changeid(data.id)
+      changename(data.name)
+      changeemail(data.email)
+      changephone(data.phone)
+      // changeactive(data.active)
+    })
+    .catch((err)=>{console.log(err.message)})
+   },[])
 
-    const navigate = useNavigate();
-    const finaldata = {id,name,email,phone,active}
-    const handlesubmit = (e)=>{
-        e.preventDefault()
 
-        fetch("http://localhost:8000/employee",{
-            method:"post",
-            headers:{"content-type":"application/json"},
-            body:JSON.stringify(finaldata)
-        })
-        .then((res)=>{
-            if(res)
-            {
-                alert("saved successfully...")
-                navigate('/')
-            }
-        })
-       
-    }
+  const finaldata = {id,name,email,phone,active}
+  const handlesubmit = (e)=>{
+      e.preventDefault()
 
+      fetch("http://localhost:8000/employee/"+empId,{
+          method:"post",
+          headers:{"content-type":"application/json"},
+          body:JSON.stringify(finaldata)
+      })
+      .then((res)=>{
+          if(res)
+          {
+              alert("saved successfully...")
+              navigate('/')
+          }
+      })
+     
+  }
   return (
     <div>
         <h2 className='my-3'>Add-Employee</h2>
@@ -57,4 +70,4 @@ function Empcreate() {
   )
 }
 
-export default Empcreate
+export default EmpEdit

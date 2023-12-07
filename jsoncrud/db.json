@@ -2,17 +2,10 @@
   "employee": [
     {
       "id": 2,
-      "name": "vidhi",
-      "email": "v@gmail.com",
-      "phone": "566768",
+      "name": "edfe",
+      "email": "e@gmail.com",
+      "phone": "4t45",
       "active": true
-    },
-    {
-      "id": 4,
-      "name": "lfbkgfk",
-      "email": "dfr@gmail.com",
-      "phone": "4867856",
-      "active": false
     }
   ]
 }

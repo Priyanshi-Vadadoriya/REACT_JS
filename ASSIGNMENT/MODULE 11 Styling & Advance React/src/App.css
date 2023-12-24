@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.custom-container {
+  background: url('https://static.vecteezy.com/system/resources/previews/026/467/058/non_2x/fresh-fruits-food-background-web-banner-with-copy-space-generative-ai-free-photo.jpg'); 
+  background-size: 100% 100%;
+  background-size: cover;
+  padding: 70px;
+  text-align: left;
+}
+
+.btn1{
+  margin-left: -35px;
+  margin-top: -6px;
+}
+.header{
+  position: relative;
+}
+.bar{
+  font-size:35px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: none;
+}
+
+@media (max-width:900px)
+{
+ .logo{
+  text-align: left;
+ } 
+ .category,.acoount-detail,.navbar{
+  display: none;
+ }
+ .bar{
+  display: block;
+  position: absolute;
+  top: 2%;
+  left: 90%;
+}
+ 
+}

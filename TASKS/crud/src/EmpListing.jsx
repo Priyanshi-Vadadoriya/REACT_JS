@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Todo() {
+function EmpListing() {
   return (
     <div>
       jj
@@ -8,4 +8,4 @@ function Todo() {
   )
 }
 
-export default Todo
+export default EmpListing

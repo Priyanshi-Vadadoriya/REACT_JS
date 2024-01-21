@@ -1,15 +1,21 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import EmpListing from './EmpListing';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import UserList from './UserList';
+import CreateUser from './CreateUser';
+import EditUser from './EditUser';
 
 function App() {
+
   return (
     <div className="App">
-     <BrowserRouter>
+      <BrowserRouter>
         <Routes>
-          <Route path='/' element={<EmpListing/>}></Route>
+          <Route path='/' element={<UserList/>}></Route>
+          <Route path='/create' element={<CreateUser/>}></Route>
+          <Route path='/edit/:userid' element={<EditUser/>}></Route>
         </Routes>
-     </BrowserRouter>
+      </BrowserRouter>
     </div>
   );
 }

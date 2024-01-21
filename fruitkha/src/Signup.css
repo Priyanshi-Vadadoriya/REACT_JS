@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-gra-01 {
+    background: linear-gradient(to top,#fbc2eb 0%,#a18cd1 100%);
+}
+.py-100{
+    padding: 60px 0px;
+}
+.page-wrapper {
+    min-height: 100vh;
+}
+.font-poppins {
+    font-family: poppins,arial,helvetica neue,sans-serif;
+}
+.page-wrapper .wrapper--w780 {
+    max-width: 780px;
+}
+.page-wrapper .wrapper {
+    margin: 0 auto;
+}
+.page-wrapper .card-3 {
+    background: #000 !important;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,.15);
+    width: 100%;
+    display: table;
+}
+
+.page-wrapper .card {
+    overflow: hidden;
+    border-radius: 3px;
+    background: #fff;
+}
+.page-wrapper .card-3 .card-heading {
+    background: url("https://colorlib.com/etc/regform/colorlib-regform-3/images/bg-heading-03.jpg") top left/cover no-repeat;
+    display: table-cell;
+    width: 50%;
+}
+.page-wrapper .card-3 .card-body {
+    width: 50%;
+    padding: 20px 65px;
+    display: table-cell;
+}
+.card-body .title {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.card-body h2 {
+    font-size: 30px;
+}
+.card-body form {
+    display: block;
+    margin-top: 0em;
+}
+.card-body .input-group {
+    position: relative;
+    margin-bottom: 33px;
+   
+}
+.card-body .input--style-3 {
+    padding: 5px 0;
+    font-size: 16px;
+    color: #ccc !important;
+    background: 0 0;
+}
+.card-body input {
+    outline: none;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 14px;
+    font-family: inherit;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.card-body .p-t-10 {
+    padding-top: 10px;
+}
+.card-body .btn--green {
+    background: #57b846;
+}
+.card-body .btn--green:hover{
+    background: white;
+    color: black;
+}
+.card-body .btn--pill {
+    border-radius: 20px;
+}
+.card-body .btn {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 33px;
+    font-family: Poppins,Arial,helvetica neue,sans-serif;
+    cursor: pointer;
+    color: #fff;
+    transition: all .4s ease;
+    font-size: 18px;
+}
+
+
+@media(max-width:992px){
+    .page-wrapper .card-3 .card-heading {
+        display: block;
+        width: 100%;
+    }
+    .page-wrapper .card-3 .card-body {
+        width: 100%;
+        display: block;
+    }
+}

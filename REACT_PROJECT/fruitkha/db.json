@@ -1,0 +1,186 @@
+{
+  "fruits": [
+    {
+      "id": 1,
+      "name": "Apple",
+      "image": "https://5.imimg.com/data5/AK/RA/MY-68428614/apple.jpg",
+      "price": 135
+    },
+    {
+      "id": 2,
+      "name": "Custard Apple",
+      "image": "https://rukminim2.flixcart.com/image/850/1000/kidgnm80-0/plant-seed/3/0/g/30-sugar-apple-sm-plus-original-imafy6jzpuasdcza.jpeg?q=90",
+      "price": 89
+    },
+    {
+      "id": 3,
+      "name": "Strawberry",
+      "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61hVLTBkByL.jpg",
+      "price": 89
+    },
+    {
+      "id": 4,
+      "name": "Pineapple",
+      "image": "https://static.libertyprim.com/files/familles/ananas-large.jpg?1569271716",
+      "price": 120
+    },
+    {
+      "id": 5,
+      "name": "Grapes",
+      "image": "https://5.imimg.com/data5/VU/MR/MY-24751011/purple-grapes.jpg",
+      "price": 172
+    },
+    {
+      "id": 6,
+      "name": "Guava",
+      "image": "https://tds-images.thedailystar.net/sites/default/files/images/2022/08/22/guava-fruit-white-table_253984-3144.jpg",
+      "price": 79
+    },
+    {
+      "id": 7,
+      "name": "Orange",
+      "image": "https://exoticflora.in/cdn/shop/products/exoticflorakinnow_1024x1024.jpg?v=1620208006",
+      "price": 79
+    },
+    {
+      "id": 8,
+      "name": "Plum",
+      "image": "https://farmfreshfundraising.com/wp-content/uploads/2017/10/plums.jpg",
+      "price": 361
+    },
+    {
+      "id": 9,
+      "name": "Watermelon",
+      "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/plant-seed/b/9/y/50-mw-watermelon-131-red-watermelon-fruit-seeds-morenk-original-imagkbjrrjn9dd5f.jpeg?q=90",
+      "price": 105
+    },
+    {
+      "id": 10,
+      "name": "Blackberry",
+      "image": "https://freshtodoor.ae/wp-content/uploads/2022/02/blacbb.jpg",
+      "price": 600
+    },
+    {
+      "id": 11,
+      "name": "Papaya",
+      "image": "https://ritikart.com/cdn/shop/products/ripe-papaya-isolated-white-clipping-path_26628-8_600x.jpg?v=1597405483",
+      "price": 90
+    },
+    {
+      "id": 12,
+      "name": "Cherry",
+      "image": "https://static.libertyprim.com/files/familles/cerise-large.jpg?1569271737",
+      "price": 600
+    },
+    {
+      "id": 13,
+      "name": "Blueberry",
+      "image": "https://dukaan.b-cdn.net/700x700/jpeg/6756360/9c4c6561-dcf8-4077-b4ef-1487bf99f965/blueberry-125-gm-0b69283d-8de1-40d0-ae26-80a91208e7e4.webp",
+      "price": 299
+    },
+    {
+      "id": 14,
+      "name": "Coconut",
+      "image": "https://www.shutterstock.com/image-photo/coconut-half-leaves-on-white-600nw-393850891.jpg",
+      "price":30
+    },
+    {
+      "id": 15,
+      "name": "Pomegranate",
+      "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/611a1wD9ZGL.jpg",
+      "price": 235
+    },
+    {
+      "id": 16,
+      "name": "Avocado",
+      "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71cs5TNn-LL.jpg",
+      "price": 260
+    },
+    {
+      "id": 17,
+      "name": "Mango",
+      "image": "https://indiasupermarkt.ch/wp-content/uploads/2018/10/Mango.jpg",
+      "price": 70
+    },
+    {
+      "id": 18,
+      "name": "Dragon fruit",
+      "image": "https://5.imimg.com/data5/HX/OR/MY-3040698/dragon-fruit.jpg",
+      "price": 130
+    },
+    {
+      "id": 19,
+      "name": "Kiwi",
+      "image": "https://rukminim2.flixcart.com/image/850/1000/plant-seed/j/h/d/futaba-40-kiwi-fruit-original-imaek2yqakan2rgc.jpeg?q=90",
+      "price": 499
+    },
+    {
+      "id": 20,
+      "name": "Star fruit",
+      "image": "https://congotropicals.com/cdn/shop/products/Startfruit-Carambola-FL-6_22b15187-8d18-4503-8911-fa3f8328e624_850x.jpg?v=1606524940",
+      "price": 125
+    },
+    {
+      "id": 21,
+      "name": "Mangosteen",
+      "image": "https://9aoya9x5.cdn.imgeng.in/media/catalog/product/cache/3/image/1200x/040ec09b1e35df139433887a97daa66f/s/h/shfv_354_1.jpg",
+      "price": 125
+    },
+    {
+      "id": 22,
+      "name": "Rambutan",
+      "image": "https://www.jctropicals.us/wp-content/uploads/2021/03/jc-tropical-rambutan-fruit.png",
+      "price": 125
+    },
+    {
+      "id": 23,
+      "name": "Litchi",
+      "image": "https://www.india.com/wp-content/uploads/2023/05/Litchi-benefits.jpg",
+      "price": 125
+    },
+    {
+      "id": 24,
+      "name": "Pear",
+      "image": "https://cdn.policyx.com/images/benefits-of-pear-fruit-main-banner-1.webp",
+      "price": 125
+    },
+    {
+      "id": 25,
+      "name": "Peach",
+      "image": "https://media.istockphoto.com/id/1393599686/photo/peach-fruit-one-cut-in-half-with-green-leaf.jpg?b=1&s=170667a&w=0&k=20&c=B5FRd1xD8ZnmSe65Z7nAni6SWy9WcxjMkZ0wViKqSYs=",
+      "price": 125
+    },
+    {
+      "id": 26,
+      "name": "Fig",
+      "image": "https://static.libertyprim.com/files/familles/figue-large.jpg?1569271764",
+      "price": 125
+    },
+    {
+      "id": 27,
+      "name": "Sweet Lime",
+      "image": "https://5.imimg.com/data5/LP/MK/FF/SELLER-52971039/sweet-lime-5-kg.jpg",
+      "price": 90
+    },
+    {
+      "id": 28,
+      "name": "Sapodilla",
+      "image": "https://media.istockphoto.com/id/983079288/photo/sapodilla-fruit-with-green-leaves-isolated-on-the-white-background.jpg?s=612x612&w=0&k=20&c=gv3KBdL9n0iye_UVjqekkEobWd0S3NDYtdR_8PlTWG0=",
+      "price": 100
+    },
+    {
+      "id": 29,
+      "name": "Amla",
+      "image": "https://sg.fromindia.com/cdn/shop/files/Fresh-Amla-India-Gooseberry-500-g-FromIndia-com-8636_700x700.jpg?v=1703168104",
+      "price": 85
+    },
+    {
+      "id": 30,
+      "name": "Sugarcane",
+      "image": "https://img.freepik.com/premium-photo/sugarcane-fruit-with-isolated-white-background_741910-14853.jpg?w=2000",
+      "price": 125
+    }
+   
+  ]
+  
+}

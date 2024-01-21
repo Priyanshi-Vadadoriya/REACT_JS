@@ -1,0 +1,65 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "fname": "priyanshi",
+      "lname": "vadadoriya",
+      "email": "priyanshi123@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "",
+      "fname": "mili",
+      "lname": "patel",
+      "phone": "7896578967",
+      "email": "mili@gmail.com",
+      "password": "4455",
+      "confirmPassword": "4455"
+    },
+    {
+      "id": "",
+      "fname": "pooja",
+      "lname": "patel",
+      "phone": "48896745",
+      "email": "pooja@gmail.com",
+      "password": "7777",
+      "confirmPassword": "7777"
+    },
+    {
+      "id": "",
+      "fname": "pili",
+      "lname": "vadadoriya",
+      "phone": "9872382997",
+      "email": "pili@gmail.com",
+      "password": "pili",
+      "confirmPassword": "pili"
+    },
+    {
+      "id": "",
+      "fname": "rtyg",
+      "lname": "rthg",
+      "phone": "234567",
+      "email": "r@gmail.com",
+      "password": "jsks",
+      "confirmPassword": "jjsns"
+    },
+    {
+      "id": "",
+      "fname": "ghnj",
+      "lname": "hgg",
+      "phone": "12345678",
+      "email": "a@gmail.com",
+      "password": "abcd",
+      "confirmPassword": "abcd"
+    },
+    {
+      "id": "",
+      "fname": "gundii",
+      "lname": "patel",
+      "phone": "9859577856",
+      "email": "g@gmail.com",
+      "password": "7777",
+      "confirmPassword": "7777"
+    }
+  ]
+}

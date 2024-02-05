@@ -60,6 +60,24 @@
       "email": "g@gmail.com",
       "password": "7777",
       "confirmPassword": "7777"
+    },
+    {
+      "id": "",
+      "fname": "harshit",
+      "lname": "vadadoriya",
+      "phone": "874784589",
+      "email": "h@gmail.com",
+      "password": "4444",
+      "confirmPassword": "4444"
+    },
+    {
+      "id": "",
+      "fname": "disha",
+      "lname": "dobariya",
+      "phone": "99254599843",
+      "email": "disha@gmail.com",
+      "password": "1441",
+      "confirmPassword": "1441"
     }
   ]
 }

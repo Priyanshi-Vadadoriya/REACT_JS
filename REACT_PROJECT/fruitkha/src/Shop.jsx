@@ -9,7 +9,7 @@ function Shop() {
 	const [product,setProduct] = useState("");
 
 	useEffect(()=>{
-		fetch("http://localhost:8080/fruits")
+		fetch("http://localhost:7000/fruits")
 		.then((res)=>{return res.json()})
 		.then((data)=>{setProduct(data)})
 		.catch((err)=>{console.log(err.message)})

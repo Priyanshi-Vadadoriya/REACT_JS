@@ -10,7 +10,7 @@ function SingleProduct() {
 	console.log(product)
 
 	useEffect(()=>{
-		fetch(`http://localhost:8080/fruits/${productId}`)
+		fetch(`http://localhost:7000/fruits/${productId}`)
 		.then((res)=>{return res.json()})
 		.then((data)=>{setProduct(data)})
 		.catch((err)=>{console.log(err.message)})

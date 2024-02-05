@@ -4,7 +4,8 @@ import Slider3 from './Slider3'
 import Header from './Header'
 import Footer from './Footer'
 
-function Cart() {	
+function Cart() {
+	
   return (
     <div>
 

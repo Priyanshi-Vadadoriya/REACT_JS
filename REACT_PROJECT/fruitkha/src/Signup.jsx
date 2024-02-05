@@ -26,12 +26,10 @@ function Signup() {
     const handleSubmit = (e) => {
         e.preventDefault(); 
 
-        
         if (fname.length === 0 || lname.length === 0 || phone.length === 0  || email.length === 0 || password.length === 0 || confirmPassword.length === 0) {
           alert("Please fill in all the required fields");
           return;
         }
-        
         
         const userdata = {id,fname,lname,phone,email,password,confirmPassword}
         const emailfind = user.find((item)=>item.email===email);
@@ -62,7 +60,6 @@ function Signup() {
           alert("Your Email Already Exist")
         }
     }
-
 
   return (
     <div>

@@ -1,75 +1,75 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
+
+const initial = [
+  {id:1,title:"HTML"},
+  {id:2,title:"CSS"},
+  {id:3,title:"JS"}
+];
 
 function Todo() {
-  const initialtodo = [
-    {id:1,title:"HTML"},
-    {id:2,title:"CSS"},
-    {id:3,title:"JS"},
-  ]
 
-  const [todo,settodo] = useState(initialtodo);
-  const [add,setadd] = useState("");
-  const [isEditing,setediting] = useState("");
-  const [Edittext,seteditText] = useState("");
+  const [todo,setTodo] = useState(initial);
+  const [add,setAdd] = useState("");
+  const [isEditing,setEditing] = useState("");
+  const [editText,setEdittext] = useState("");
 
-  const handleadd = ()=>{
-    if(add=="") 
-    {
-      alert("Plz enter something....")
-    }
-    else
-    {
-      settodo([...todo,{id:todo.length+1,title:add}])
-      setadd("")
-    }
+const saveTodo = ()=>{
+  if(add == "")
+  {
+    alert("Plz enter something...")
   }
-
-  const handleEdit = (id,title)=>{
-    setediting(id)
-    seteditText(title)
+  else{
+    setTodo([...todo,{id:todo.length+1,title:add}])
+    setAdd("")
   }
+}
 
-  const handleSave = (id)=>{
-    const save = todo.map((v)=>
-    v.id == id ? {...v,title:Edittext} : v
-    )
-    settodo(save)
-    setediting(null)
-  }
+const editTodo = (id,title)=>{
+  setEditing(id)
+  setEdittext(title)
+}
 
-  const handleDelete = (id)=>{
-    const deleted = todo.filter((v)=>
-    v.id !== id
-    )
-    settodo(deleted)
-  }
+const handleSave = (id)=>{
+  const save = todo.map((v)=>
+  v.id == id ? {...v,title:editText} : v
+  )
+  setTodo(save)
+  setEditing(null)
+}
 
-  return (
+const deletetodo = (id)=>{
+  const deleted = todo.filter((v)=>
+  v.id !== id)
+  setTodo(deleted)
+}
+
+  return(
     <div>
-     <input type='text' value={add} onChange={(e)=>{setadd(e.target.value)}}></input>
-     <button onClick={handleadd}>Add</button>
-     {
+      <input type="text" value={add} onChange={(e)=>setAdd(e.target.value)}></input>
+      <button onClick={saveTodo}>Add</button>
+      {
         todo.map((v)=>(
           <ul>
-            <li>
+            <li key={v.id}>
               {
-                isEditing == v.id ? 
+                isEditing == v.id ?
                 (<>
-                    <input type='text' value={Edittext} onChange={(e)=>{seteditText(e.target.value)}}></input>
-                    <button onClick={()=>{handleSave(v.id)}}>Save</button>
-                </>):
+                <input type="text" value={editText} onChange={(e)=>setEdittext(e.target.value)}></input>
+                <button onClick={()=>{handleSave(v.id)}}>Save</button>
+                </>) : 
+                
                 (<>
-                    {v.title}
-                    <button onClick={()=>{handleEdit(v.id,v.title)}}>Edit</button>
-                    <button onClick={()=>{handleDelete(v.id)}}>delete</button>
+                {v.title}
+                <button onClick={()=>{editTodo(v.id,v.title)}}>Edit</button>
+                <button onClick={()=>{deletetodo(v.id)}}>Delete</button>
                 </>)
               }
             </li>
           </ul>
         ))
-     }
+      }
     </div>
   )
 }
 
-export default Todo
+export default Todo;
